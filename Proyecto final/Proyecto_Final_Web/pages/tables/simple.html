@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | Notificaciones</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+
+    <!-- Right navbar links -->
+    
+  </nav>
+
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+   <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+
+          <li class="nav-item has-treeview menu-open">
+           
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../tables/simple.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Notificaciones</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Agrupamientos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a  class="nav-link" id="salir">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Salir</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+         
+          </li>
+         
+          </li>
+ 
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Enviar Notificacion</h1>
+          </div>
+         
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+           
+            <!-- /.card -->
+
+            <div class="card">
+              <div class="card-header">
+                <BUTTON  style="margin-left: 950px" type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default" id="btnNuevaNotificacion">Nueva</BUTTON>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>Asunto</th>
+                    <th>Grupo</th>
+                    <th>Accion</th>
+                   
+                  </tr>
+                  </thead>
+                  <tbody>
+                  
+                  </tbody>
+                  
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+
+    <div class="modal fade" id="modal-default">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Nueva Notificacion</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+                    
+                        <div class="form-group" >
+                        <input type="text" class="form-control" placeholder="Asunto ..." id="MAtitulo">
+                      </div> 
+                      <div class="form-group">
+                        <textarea class="form-control" rows="3" placeholder="Descripcion ..." id="MAdescripcion"></textarea>
+                      </div>
+                        
+                           <!-- select -->
+                      <div class="form-group" style="width: 200px">
+                        
+                        <select class="form-control" id="selectMNN">
+                        </select>
+                      </div>
+
+              
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary" id="altaNotificacion">Enviar</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+
+
+
+
+       <div class="modal fade" id="modal-default1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Notificacion</h4>
+              <button type="button" style="margin-left: 80px" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+              <p id="AsustoModal-default1">  </p> 
+              <p id="destinatariosModal-default1"></p>
+              <p id="descripcionModal-default1"></p>
+              <p id="fechaModal-default1"></p>
+            </div>
+
+            <div class="modal-footer justify-content-between">
+
+              <button type="button" class="btn btn-default" data-dismiss="modal" style="margin-left: 380px">Cerrar</button>
+              
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+
+
+
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- page script -->
+
+
+<!--FireBase-->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+<script>
+
+  cargarNotificaciones();
+
+  function enviarMensajeFireBase(tit,des,idGrupo)
+  {
+    $.ajax({
+        type: "POST",
+        url: '../php/consultas.php',
+        data: {op:3,ID:idGrupo},
+        success: function(response)
+        {
+            var jsonData = JSON.parse(response);
+
+            if (jsonData.success == "1")
+            {
+              for (var i = 0; i < jsonData.agrupamiento.length; i++) 
+              {
+                $.ajax({
+                    type: "POST",
+                    url: '../php/notiAPP.php',
+                    data: {TIT:tit,DES:des,IDGRU:jsonData.agrupamiento[i].Usuario_idUsuario},
+                    success: function(response)
+                    {
+                    }
+                });
+              }
+            }
+            else
+            {
+              alert("Error a enviar a FireBase");
+            }
+       }
+    });
+  }
+
+  //Fin de Clud Messing 
+
+  $("#salir").on('click', function() 
+  {
+    window.open('../../index.html', '_self');
+  });
+
+  $(document).ready(function() 
+  {
+    $("#btnNuevaNotificacion").on('click', function() 
+    {
+      cargarSelectGrupos();
+    });
+
+    $("#altaNotificacion").on('click', function() 
+    {
+      altaNotificacion();
+    });
+
+  });
+
+  $(function () 
+  {
+    $("#example1").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+    });
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+
+
+  });
+
+  function cargarSelectGrupos()//Cargar Datos al Modal Grupo
+  {
+    $('#selectMNN').empty().append("<option selected value='ninguno'>Seleccion grupo</option>");
+     $.ajax(
+     {
+        type: "POST",
+        url: '../php/consultas.php',
+        data: {op:1},
+        success: function(response)
+        {
+            var jsonData = JSON.parse(response);
+
+            if (jsonData.success == "1")
+            {
+              for (var i = 0; i < jsonData.grupo.length; i++) 
+              {
+                $('#selectMNN').append("<option value='"+jsonData.grupo[i].idGrupo+"'>"+jsonData.grupo[i].nombre+"</option>");
+              }
+            }
+            else
+            {
+              console.log("Error no se encontraron grupos");
+            }
+       }
+    });
+  }
+
+  function cargarNotificaciones()//Cargar Datos al Modal Grupo
+  {
+    $.ajax(
+    {
+      type: "POST",
+      url: '../php/consultas.php',
+      data: {op:6},
+      success: function(response)
+      {
+          var jsonData = JSON.parse(response);
+
+          if (jsonData.success == "1")
+          {
+            for (var i = 0; i < jsonData.notificacion.length; i++) 
+            {
+              mostrarNotificacion(jsonData.notificacion[i].titulo,jsonData.notificacion[i].Grupo_idGrupo,jsonData.notificacion[i].idNotificacion);
+            }
+          }
+          else
+          {
+            console.log("Error no se encontraron grupos");
+          }
+     }
+    });
+  }
+
+  function altaNotificacion()
+  {
+
+    //Inicio de la extracion de la fecha
+    n =  new Date();
+    //Año
+    y = n.getFullYear();
+    //Mes
+    m = n.getMonth() + 1;
+    //Día
+    d = n.getDate();
+    //Hora
+    h = n.getHours();
+    //Minutos
+    mn = n.getMinutes();
+    //Segundos
+    s =n.getSeconds();
+
+    fecha = y+"-"+m+"-"+d+" "+h+":"+mn+":"+s;
+    //Fin de la extraccion de la fecha
+
+    IdGru = document.getElementById("selectMNN").value;
+    tit = document.getElementById("MAtitulo").value;
+    des = document.getElementById("MAdescripcion").value;
+
+
+    if (fecha !="" && IdGru !="ninguno" && tit !="" && des !="")
+    {
+      $.ajax({
+        type: "POST",
+        url: '../php/alta.php',
+        data: {TIT:tit,DES:des,FEC:fecha,IDGRU:IdGru,op:3},
+        success: function(response)
+        {
+            var jsonData = JSON.parse(response);
+
+            if (jsonData.success == "1")
+            {
+              actualizarTabla();
+              $("#MAtitulo").val("");
+              $("#MAdescripcion").val("");
+              $("#modal-default").modal('hide');
+              enviarMensajeFireBase(tit,des,IdGru);
+            }
+            else
+            {
+              console.log("Error no se agrego la notificacion");
+            }
+       }
+      });
+    }
+    else
+    {
+      console.log("Por favor no deje algun campo vacio y/o seleccione un grupo");
+    }
+  }
+
+  function mostrarNotificacion(titulo,grupo,idNotificacion)
+  {
+    $.ajax({
+        type: "POST",
+        url: '../php/consultas.php',
+        data: {ID:grupo,op:2},
+        success: function(response)
+        {
+            var jsonData = JSON.parse(response);
+
+            if (jsonData.success == "1")
+            {
+              /*
+              reglon = "<tr id='trN"+idNotificacion+"'><td>"+titulo+"</td><td id='tdN"+idNotificacion+"'>"+jsonData.grupo[0].nombre+"</td><td class='btn btn-default' data-toggle='modal' data-target='#modal-default1' onclick='cargarDMVer("+idNotificacion+")' aling='center'><FONT COLOR='blue'>Ver</FONT></td></tr>";
+
+              $('#example1 tbody').append(reglon);
+              */
+
+              var tabla = $('#example1').DataTable();
+
+              botones = "<div class='btn btn-default' data-toggle='modal' data-target='#modal-default1' onclick='cargarDMVer("+idNotificacion+")' aling='center'><FONT COLOR='blue'>Ver</FONT></div>";
+
+              grupo = "<div id='grupo"+idNotificacion+"'>"+jsonData.grupo[0].nombre+"</div>"
+
+              tabla.row.add([
+                  titulo,
+                  grupo,
+                  botones
+                ]).draw().node().id = "trN"+idNotificacion;
+            }
+            else
+            {
+              console.log("Error no se encontro el grupo");
+            }
+       }
+    });
+    
+  }
+
+  function cargarDMVer(idNoti)
+  {
+    $("#AsustoModal-default1").html("");
+    $("#destinatariosModal-default1").html("");
+    $("#DescripcionModal-default1").html("");
+    $("#DescripcionModal-default1").html("");
+
+    nomGrupo = $("#grupo"+idNoti).html();
+
+    $.ajax({
+        type: "POST",
+        url: '../php/consultas.php',
+        data: {ID:idNoti,op:7},
+        success: function(response)
+        {
+            var jsonData = JSON.parse(response);
+
+            if (jsonData.success == "1")
+            {
+              $("#AsustoModal-default1").html("<b>Asunto:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+jsonData.notificacion[0].titulo);
+              $("#destinatariosModal-default1").html("<b>Destinatarios:</b> &nbsp;"+nomGrupo);
+              $("#descripcionModal-default1").html("<b>Descripcion</b> <br>"+jsonData.notificacion[0].descripcion);
+              $("#fechaModal-default1").html("<b>Fecha:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+jsonData.notificacion[0].fecha);
+              $("#modal-default1").modal('show');
+            }
+            else
+            {
+              console.log("Error no se encontro l notificacion");
+            }
+       }
+    });
+    
+  }
+
+  function actualizarTabla()
+  {
+    var table = $('#example1').DataTable();
+
+    table
+      .clear()
+      .draw();
+
+    cargarNotificaciones();
+  }
+</script>
+</body>
+</html>

@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
 </head>
 <body class="hold-transition login-page">
 <div class="login-box">
@@ -27,9 +28,9 @@
   <div class="card">
     <div class="card-body login-card-body">
      
-      <form action="../../index.html" method="post">
+      <form method="post" id="Consulta">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Usuario">
+          <input type="" class="form-control" placeholder="Usuario">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -50,12 +51,11 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">INGRESAR</button>
+            <button type="submit" class="btn btn-primary btn-block" id="buttIngresar">INGRESAR</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
-
     
       <!-- /.social-auth-links -->
 
@@ -73,5 +73,49 @@
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
 
+<script type="text/javascript">
+$(document).ready(function() 
+{
+    $("#buttIngresar").on('click', function() 
+    {
+      $usu = document.forms["Consulta"].elements[0].value;
+      $con = document.forms["Consulta"].elements[1].value;
+      
+      if(($usu != "") && ($con != ""))
+      {
+        actionInisiarSecion($usu,$con);
+      }
+      else
+      {
+        console.log("Error ingrese un usuario o contraseña incorrecto");
+      }
+    });
+});
+
+function actionInisiarSecion(usu,con)
+{
+  $.ajax(
+  {
+    type: "GET",
+    url: '../php/login.php',
+    data: {usuario:usu,clave:con},
+    success: function(response)
+    {
+      console.log(response);
+      var jsonData = JSON.parse(response);
+
+      if (jsonData.success == "1")
+      {
+        console.log("Adio..");
+        window.open('../../index.html', '_self');
+      }
+      else
+      {
+        console.log("Error ingrese un usuario o contraseña incorrecto");
+      }
+    }
+  });
+}
+</script>
 </body>
 </html>

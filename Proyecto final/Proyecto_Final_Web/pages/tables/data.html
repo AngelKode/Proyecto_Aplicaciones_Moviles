@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | Notificaciones</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      
+    
+    </ul>
+
+    <!-- SEARCH FORM -->
+
+    <!-- Right navbar links -->
+    
+  </nav>
+
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+   <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+
+          <li class="nav-item has-treeview menu-open">
+           
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="../tables/simple.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Notificaciones</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../tables/data.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Agrupamientos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a  class="nav-link" id="salir">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Salir</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+         
+          </li>
+         
+          </li>
+ 
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Grupos</h1>
+          </div>
+         
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+           
+            <!-- /.card -->
+
+            <div class="card">
+              <div class="card-header">
+                <BUTTON  style="margin-left: 950px" type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default" id="btnNuevo"> Nuevo</BUTTON>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>Asunto</th>
+                    <th>Grupo</th>
+                    <th>Accion</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+
+                  </tbody>
+                  
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
+
+    <div class="modal fade" id="modal-default">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Nuevo Grupo</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              
+                    <form role="form" id="enviarF">
+                        <div class="form-group">
+                          <label>Nombre</label>
+                        <input type="text" class="form-control" placeholder="Digite un nombre" id="nombreNG">
+                      </div> 
+                      <label>Descripcion</label>
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Digite una descricion" id="descripcionNG">
+                      </div>
+                    </form>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary" id="envi">Enviar</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+    <div class="modal fade" id="modal-Actualizar">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Actualizar Grupo</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <p style="display: none" id="modal-Actualizar-idGrupo"></p>
+                    <form role="form" id="actualizarF">
+                        <div class="form-group">
+                          <label>Nombre</label>
+                        <input type="text" class="form-control" placeholder="Digite un nombre" id="nombreAG">
+                      </div> 
+                      <label>Descripcion</label>
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Digite una descricion" id="descripcionAG">
+                      </div>
+                    </form>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary" id="actuali">Actualizar</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+
+
+  <div class="modal fade" id="modal-defaultEliminar">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Eliminar grupo<h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <br>
+              <br>
+              
+                    <p>¿Esta seguro que desea eliminar el grupo?</p>
+                    <p><b id="modal-defaultEliminar-PNombreGrupo"></b></p>
+                    <p style="display: none" id="modal-defaultEliminar-idGrupo"></p>
+
+              <br>
+              <br>      
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary" id="modal-defaultEliminarButt">Eliminar</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+
+
+
+
+
+
+
+       <div class="modal fade" id="modal-defaultAsignar">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Asignara a grupo</h4>
+              <button type="button" style="margin-left: 80px" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+               <div class="input-group input-group-sm" style="width: 150px; margin-left: 315px">
+                    <input type="text" name="table_search" class="form-control float-right" placeholder="Buscar">
+
+                    <div class="input-group-append">
+                      <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+                    </div>
+                  </div>
+                  <br>
+
+                  <!--  -->
+                  <p style="display: none" id="modal-defaultAsignarIdGrupo"></p>
+                <P>Usuarios Disponibles</P>
+                 <table class="table table-bordered" id="alumnosDisponiblesMG">
+                  <thead >                  
+                    <tr>
+                      <th  bgcolor="#9c9c9c">Nombre</th>
+                      <th  bgcolor="#9c9c9c">Funcion</th>
+                      <th bgcolor="#9c9c9c" >Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                    
+
+                  </tbody>
+                </table>
+            <P>Usuarios dentro del Grupo</P>
+             <table class="table table-bordered" id="alumnosDentroGrupoMG">
+                  <thead >                  
+                    <tr>
+                      <th  bgcolor="#9c9c9c">Nombre</th>
+                      <th bgcolor="#9c9c9c">Funcion</th>
+                      <th bgcolor="#9c9c9c">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                  </tbody>
+               
+                </table>
+
+            <div class="modal-footer justify-content-between">
+
+               
+              <button type="button" class="btn btn-default cerrarBtn" data-dismiss="modal" style="margin-left: 385px">Cerrar</button>
+              
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+
+
+
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- page script -->
+
+<!--FireBase-->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+//Cloud Messing
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+
+<script src="../../build/js/firebase-messaging-sw.js"></script>
+
+<script>
+  $(function () 
+  {
+    consulta();
+    $("#example1").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+    });
+    
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+
+$(document).ready(function() 
+{
+    $("#btnNuevo").on('click', function() 
+    {
+      $("#nombreNG").val("");
+      $("#descripcionNG").val("");
+    });
+
+    $("#envi").on('click', function() 
+    {
+      $nom = document.forms["enviarF"].elements[0].value;
+      $des = document.forms["enviarF"].elements[1].value;
+      
+      if(($nom != "") && ($des != ""))
+      {
+        actionAgregarGrupo($nom,$des);
+      }
+      else
+      {
+        console.log("Error ingrese un usuario o contraseña incorrecto");
+      }
+    });
+
+    $("#salir").on('click', function() 
+    {
+      window.open('../../index.html', '_self');
+    });
+
+    //Listener del boton de eliminar del modal de eliminar
+    $("#modal-defaultEliminarButt").on('click', function() 
+    {
+
+      ID = $("#modal-defaultEliminar-idGrupo").html();
+      $.ajax({
+          type: "POST",
+          url: '../php/eliminar.php',
+          data: {op:1,id:ID},
+          success: function(response)
+          {
+              var jsonData = JSON.parse(response);
+
+              if (jsonData.success == "1")
+              {
+                limpiarTablas();
+                eliminarAgrupamientosNotificaciones(ID);
+              }
+              else
+              {
+                console.log("Error no se encontraron grupos");
+              }
+         }
+      });//Din del ajax
+
+      $("#modal-defaultEliminar").modal('hide');
+    });
+
+});
+
+function consulta()
+{
+  $.ajax({
+      type: "POST",
+      url: '../php/consultas.php',
+      data: {op:1},
+      success: function(response)
+      {
+          var jsonData = JSON.parse(response);
+
+          if (jsonData.success == "1")
+          {
+            for (var i = 0; i < jsonData.grupo.length; i++) 
+            {
+              mostrarGrupo(jsonData.grupo[i].idGrupo,jsonData.grupo[i].nombre,jsonData.grupo[i].descripcion);
+            }
+          }
+          else
+          {
+            console.log("Error no se encontraron grupos");
+          }
+     }
+  });
+}
+
+function actionAgregarGrupo(nom,des)
+{
+  $.ajax({
+      type: "POST",
+      url: '../php/alta.php',
+      data: {nombre:nom,descricion:des,op:1},
+      success: function(response)
+      {
+          var jsonData = JSON.parse(response);
+
+          if (jsonData.success == "1")
+          {
+            limpiarTablas();
+            $("#modal-default").modal('hide');
+          }
+          else
+          {
+            console.log("Error no se guardo el grupo");
+          }
+     }
+  });
+}
+
+function mostrarGrupo(id,nom,des)
+{
+  var tabla = $('#example1').DataTable();
+
+  botones = "<div><button class='btn btn-default' data-toggle='modal' data-target='#modal-defaultAsignar'><i class='fas fa-user-friends' onclick='cargarDMG("+id+")'></i></button>&nbsp;&nbsp;<button class='btn btn-default btnActualizar' data-toggle='modal' data-target='#modal-Actualizar' onclick='cargarDMA("+id+")'><i class='fas fa-pencil-alt'></i></button>&nbsp;&nbsp;<button  class='btn btn-default eliminarGrupo' data-toggle='modal' data-target='#modal-defaultEliminar' onclick='cargarDME("+id+")'><i class='fas fa-trash'></i></button></div>";
+
+  tabla.row.add([
+      "<div id='example1Nombre"+id+"'>"+nom+"</div>",
+      des,
+      botones
+    ]).draw().node().id = "example1TR"+id;
+}
+
+//*ELIMINAR*-*ELIMINAR*-*ELIMINAR*-*ELIMINAR*-*ELIMINAR*-*ELIMINAR*-*ELIMINAR*-*ELIMINAR*-*ELIMINAR*-*ELIMINAR*-*ELIMINAR*-*ELIMINAR*-
+function cargarDME(id)//Cargar Datos Modal Eliminar
+{
+  $("#modal-defaultEliminar-PNombreGrupo").html("");
+  $("#modal-defaultEliminar-idGrupo").html("");
+
+  renglon = $("#example1Nombre"+id).html();
+
+  $("#modal-defaultEliminar-PNombreGrupo").append(renglon);
+  $("#modal-defaultEliminar-idGrupo").append(id);
+}
+
+//Parte de actualizar *ACTUALIZAR*-*ACTUALIZAR*-*ACTUALIZAR*-*ACTUALIZAR*-*ACTUALIZAR*-*ACTUALIZAR*-*ACTUALIZAR*
+function cargarDMA(id)//Cargar Datos Modal Actualizar
+{
+  $("#nombreAG").val("");
+  $("#descripcionAG").val("");
+  $("#modal-Actualizar-idGrupo").html("");
+
+  $.ajax({
+      type: "POST",
+      url: '../php/consultas.php',
+      data: {op:2, ID:id},
+      success: function(response)
+      {
+          var jsonData = JSON.parse(response);
+
+          if (jsonData.success == "1")
+          {
+            $("#nombreAG").val(jsonData.grupo[0].nombre);
+            $("#descripcionAG").val(jsonData.grupo[0].descripcion);
+            $("#modal-Actualizar-idGrupo").append(id);
+            $("#modal-Actualizar").modal('show');
+          }
+          else
+          {
+            console.log("Error no se encontraron grupos");
+          }
+     }
+  });
+}
+
+$("#actuali").on('click', function()//Listener de boton de actualizar 
+{
+  $nom = document.forms["actualizarF"].elements[0].value;
+  $des = document.forms["actualizarF"].elements[1].value;
+  $id = $("#modal-Actualizar-idGrupo").html();
+
+  if(($nom != "") && ($des != ""))
+  {
+    actionActualizarGrupo($id,$nom,$des);
+  }
+  else
+  {
+    console.log("Error no deje algun campo en blanco");
+  }
+});
+
+function actionActualizarGrupo(id,nom,des)
+{
+  $.ajax({
+      type: "POST",
+      url: '../php/actualizar.php',
+      data: {nombre:nom,descricion:des,ID:id,op:1},
+      success: function(response)
+      {
+          var jsonData = JSON.parse(response);
+
+          if (jsonData.success == "1")
+          {
+            limpiarTablas();
+            $("#modal-Actualizar").modal('hide');
+          }
+          else
+          {
+            console.log("Error no se actualizo el grupo");
+          }
+     }
+  });
+}
+//Parte de Asignara a grupo *-*Asignara a grupo*-*Asignara a grupo*-*Asignara a grupo*-*Asignara a grupo*-*Asignara a grupo*
+
+function cargarDMG(id)//Cargar Datos al Modal Grupo
+{
+  limpiarTablas();
+
+  cargarDTAD(id);
+  cargarDTADG(id);
+
+  $("#modal-defaultAsignarIdGrupo").html("");
+  $("#modal-defaultAsignarIdGrupo").append(id);
+}
+
+function cargarDTADG(id)//Cargar Datos en Tabla Alumnos Dentro Grupo seleccionado
+{
+   $.ajax({
+      type: "POST",
+      url: '../php/consultas.php',
+      data: {op:3,ID:id},
+      success: function(response)
+      {
+          var jsonData = JSON.parse(response);
+
+          if (jsonData.success == "1")
+          {
+            for (var i = 0; i < jsonData.agrupamiento.length; i++) 
+            {
+              mostrarAlumno(jsonData.agrupamiento[i].Usuario_idUsuario,1);
+            }
+          }
+          else
+          {
+            console.log("Error no se encontraron grupos");
+          }
+     }
+  });
+}
+
+function cargarDTAD(id)//Cargar Datos en Tabla Alumnos Disponibles
+{
+   $.ajax({
+      type: "POST",
+      url: '../php/consultas.php',
+      data: {op:5, ID: id},
+      success: function(response)
+      {
+          var jsonData = JSON.parse(response);
+
+          if (jsonData.success == "1")
+          {
+            for (var i = 0; i < jsonData.alumno.length; i++) 
+            {
+              mostrarAlumno(jsonData.alumno[i].idUsuario,2);
+            }
+          }
+          else
+          {
+            console.log("Error no se encontraron grupos");
+          }
+     }
+  });
+}
+
+function mostrarAlumno(idUsu,tabl)//Agrega el alumno a una tabla 
+{
+  $.ajax({
+      type: "POST",
+      url: '../php/consultas.php',
+      data: {op:4,ID:idUsu},
+      success: function(response)
+      {
+        var jsonData = JSON.parse(response);
+
+        if (jsonData.success == "1")
+        {
+          var tabla;
+          var botones;
+
+          if (tabl == 1)
+          {
+            tabla = $('#alumnosDentroGrupoMG').DataTable();
+            botones = "<div><button  class='btn btn-default' onclick='eliminarAlumnoGrupo(this,"+idUsu+")'><i class='fas fa-trash'></i></button></div>";
+          }
+          else
+          {
+            tabla = $('#alumnosDisponiblesMG').DataTable();
+            botones = "<div><button  class='btn btn-default' onclick='cargarAlumnoGrupo(this,"+idUsu+")'><i class='fas fa-plus-square'></i></button></div>";
+          }
+
+          
+
+          tabla.row.add([
+              jsonData.alumno[0].nombrecompleto,
+              jsonData.alumno[0].tipo,
+              botones
+            ]).draw().node().id = "trAlumnoD"+jsonData.alumno[0].idUsuario;
+        }
+        else
+        {
+          console.log("Error no se encontraron grupos");
+        }
+     }
+  });
+}
+
+function cargarAlumnoGrupo(elmnt,IdUsu)//Cargar Alumno a grupo
+{
+  
+  IdGru = $("#modal-defaultAsignarIdGrupo").html();
+  $.ajax({
+    type: "POST",
+    url: '../php/alta.php',
+    data: {op:2,IDUSU:IdUsu, IDGRU:IdGru},
+    success: function(response)
+    {
+        var jsonData = JSON.parse(response);
+
+        if (jsonData.success == "1")
+        {
+          limpiarTablas();
+          cargarDTAD(IdGru);
+          cargarDTADG(IdGru);
+        }
+        else
+        {
+          console.log("Error no se actualizo el grupo");
+        }
+   }
+  });
+}
+
+
+function eliminarAlumnoGrupo(elmnt,IdUsu)//Cargar Alumno a grupo
+{
+  IdGru = $("#modal-defaultAsignarIdGrupo").html();
+  $.ajax({
+    type: "POST",
+    url: '../php/eliminar.php',
+    data: {op:2,id:IdUsu},
+    success: function(response)
+    {
+        var jsonData = JSON.parse(response);
+
+        if (jsonData.success == "1")
+        {
+          limpiarTablas();
+          cargarDTAD(IdGru);
+          cargarDTADG(IdGru);
+        }
+        else
+        {
+          console.log("Error no se actualizo el grupo");
+        }
+   }
+  });
+}
+
+function eliminarAgrupamientosNotificaciones(ID)
+{
+  $.ajax({
+    type: "POST",
+    url: '../php/eliminar.php',
+    data: {op:3,id:ID},
+    success: function(response)
+    {
+        var jsonData = JSON.parse(response);
+
+        if (jsonData.success != "1")
+        {
+          console.log("Error no se eliminaron el/los agrupamientos");
+        }
+   }
+  });
+
+  $.ajax({
+    type: "POST",
+    url: '../php/eliminar.php',
+    data: {op:4,id:ID},
+    success: function(response)
+    {
+        var jsonData = JSON.parse(response);
+
+        if (jsonData.success != "1")
+        {
+          console.log("Error no se eliminaron la/las Notificaciones");
+        }
+   }
+  });
+}
+
+function limpiarTablas()
+{
+  
+  var table;
+
+  for (var i = 1; i <= 3; i++) 
+  {
+    switch (i)
+    {
+      case 1:
+        table = $('#example1').DataTable();
+       break;
+
+      case 2:
+        table = $('#alumnosDentroGrupoMG').DataTable();
+       break;
+
+      case 3:
+        table = $('#alumnosDisponiblesMG').DataTable();
+       break;
+    }
+
+    table
+      .clear()
+      .draw();
+  }
+ 
+ consulta();
+  
+}
+</script>
+</body>
+</html>
