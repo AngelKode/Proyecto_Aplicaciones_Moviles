@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="199dp"
+        tools:layout_editor_absoluteY="233dp">
+
+        <TableRow
+            android:id="@+id/rowLista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="400dp"
+                android:layout_height="682dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"/>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/rowNotificacion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:visibility="gone">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="199dp"
+                tools:layout_editor_absoluteY="233dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:text="@string/noti"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewTitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/beca"
+                        android:textAlignment="center"
+                        android:textSize="20sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewDescrip"
+                        android:layout_width="277dp"
+                        android:layout_height="289dp"
+                        android:layout_marginHorizontal="6dp"
+                        android:layout_marginVertical="20dp"
+                        android:background="@drawable/paper"
+                        android:lineSpacingExtra="30dp"
+                        android:paddingLeft="41dp"
+                        android:paddingTop="30dp"
+                        android:text="@string/texto"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="17sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp">
+
+                    <Button
+                        android:id="@+id/buttonRegresar"
+                        android:layout_width="200dp"
+                        android:layout_height="43dp"
+                        android:background="@drawable/marco2"
+                        android:text="Regresar"
+                        android:textColor="@color/colorBlanco" />
+                </TableRow>
+
+            </TableLayout>
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
