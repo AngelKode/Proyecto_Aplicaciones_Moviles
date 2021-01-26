@@ -4,24 +4,28 @@
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_marco2.xml.flat",
-        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\drawable\\marco2.xml"
-    },
-    {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_home_24.png.flat",
-        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_home_24.png"
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_marco2.xml.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\drawable\\marco2.xml"
     },
     {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_home_24.png.flat",
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_home_24.png"
     },
     {
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_home_24.png.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_home_24.png"
+    },
+    {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_home_24.png.flat",
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_home_24.png"
+    },
+    {
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_sms_black_24dp.png.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_sms_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -40,6 +44,10 @@
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_home_24.png.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_home_24.png"
+    },
+    {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
@@ -48,16 +56,12 @@
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_home_24.png.flat",
-        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_baseline_home_24.png"
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_paper.png.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\drawable\\paper.png"
     },
     {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
-    },
-    {
-        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_paper.png.flat",
-        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\drawable\\paper.png"
     },
     {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_exit_to_app_24.png.flat",
@@ -92,12 +96,12 @@
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
-        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
-    },
-    {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_notifications_active_24.png.flat",
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_notifications_active_24.png"
+    },
+    {
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
     },
     {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_baseline_notifications_active_24.png.flat",
@@ -120,12 +124,12 @@
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_inicio.xml.flat",
-        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\menu\\menu_inicio.xml"
-    },
-    {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_baseline_notifications_active_24.png.flat",
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_baseline_notifications_active_24.png"
+    },
+    {
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_inicio.xml.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\menu\\menu_inicio.xml"
     },
     {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_gallery.xml.flat",
@@ -144,36 +148,52 @@
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_add_alert_24.xml.flat",
-        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_add_alert_24.xml"
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_sms_black_24dp.png.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_sms_black_24dp.png"
     },
     {
-        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_notificacion.xml.flat",
-        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\layout\\fragment_notificacion.xml"
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_baseline_add_alert_24.xml.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_baseline_add_alert_24.xml"
     },
     {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_exit_to_app_24.png.flat",
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_exit_to_app_24.png"
     },
     {
-        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_notificacion.xml.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\layout\\fragment_notificacion.xml"
     },
     {
-        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_login.PNG.flat",
-        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\drawable\\login.PNG"
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_sms_black_24dp.png.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_sms_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_baseline_notifications_active_24.png.flat",
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_baseline_notifications_active_24.png"
     },
     {
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable_login.PNG.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\drawable\\login.PNG"
+    },
+    {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_bar_main.xml.flat",
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\layout\\app_bar_main.xml"
     },
     {
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_sms_black_24dp.png.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_sms_black_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_exit_to_app_24.png.flat",
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_exit_to_app_24.png"
+    },
+    {
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_sms_black_24dp.png.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_sms_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_baseline_add_alert_24.png.flat",
@@ -204,6 +224,10 @@
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_add_alert_24.png"
     },
     {
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_sms_black_24dp.png.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_sms_black_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_baseline_notifications_active_24.png.flat",
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_baseline_notifications_active_24.png"
     },
@@ -218,6 +242,10 @@
     {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_sms_black_24dp.xml.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_sms_black_24dp.xml"
     },
     {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_menu_slideshow.xml.flat",
@@ -244,12 +272,12 @@
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_baseline_notifications_active_24.png"
     },
     {
-        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_menu_camera.xml.flat",
-        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_menu_camera.xml"
-    },
-    {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_baseline_add_alert_24.png.flat",
         "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_baseline_add_alert_24.png"
+    },
+    {
+        "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_menu_camera.xml.flat",
+        "source": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_menu_camera.xml"
     },
     {
         "merged": "C:\\Users\\peper\\AndroidStudioProjects\\ProyectoFinal\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
